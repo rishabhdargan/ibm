@@ -1,0 +1,13 @@
+---
+applications:
+- name: Company_Mailer_IBM
+  memory: 512M
+  host: Company_Mailer_IBM
+  domain: au-syd.mybluemix.net
+  env:
+    JAVA_HOME: C:\Program Files\Java\jdk1.8.0_05
+    JRE_HOME: C:\Program Files\Java\jre8
+    Path: C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\PROGRAM FILES\BROADCOM\BROADCOM 802.11 NETWORK ADAPTER;%SYSTEMROOT%\SYSTEM32;%SYSTEMROOT%;%SYSTEMROOT%\SYSTEM32\WBEM;%SYSTEMROOT%\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES (X86)\COMMON FILES\LENOVO\EASYPLUSSDK\BIN;C:\PROGRAM FILES\LENOVO FINGERPRINT READER\;C:\PROGRAM FILES\LENOVO FINGERPRINT READER\X86\;C:\PROGRAM FILES (X86)\INTEL\OPENCL SDK\2.0\BIN\X86;C:\PROGRAM FILES (X86)\INTEL\OPENCL SDK\2.0\BIN\X64;;C:\PROGRAM FILES\JAVA\JDK1.8.0_05\JRE\BIN;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\Program Files\Apache Software Foundation\Tomcat 8.0\bin;C:\Program Files\Java\jre8\bin;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Program Files (x86)\CloudFoundry;F:\ibm liberty\bin;
+  buildpack: http://ibm-company-mailer.au-syd.mybluemix.net/
+  services:
+  - WebSphereAppSvr
